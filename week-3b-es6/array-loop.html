@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+	let arrays = ['a', 'b', 'c'];
+
+//one way of checking each item in the array
+	console.log(arrays[0] == 'a'); //true
+	console.log(arrays[1] == 'a'); //false
+	console.log(arrays[2] == 'a'); //false
+
+
+	for(let i=0; i<arrays.length; i = i+1){
+	console.log(i);  //prints out 0,1,2
+	}	
+
+// written using ES6
+arrays.forEach((item) => {
+console.log(item)  // prints out a, b, c
+})
+
+	for(let i=0; i<arrays.length; i = i+1) {
+	console.log(arrays[i]);  // prints out a, b, c
+	}
+
+	//another way
+	for(let i=0; i<arrays.length; i = i+1) {
+	console.log(arrays[i] == 'a'); 
+	// first iteration 'i' = 0, 0 is < arrays.length which is 3; arrays[a] == 'a', prints out 'true', 
+	// then 'i' = 0 + 1, second iteration 'i' = 1, 1 is < arrays.length which is 3; arrays[b] == 'a', prints out 'false', 
+	// then 'i' = 1 + 1, third iteration  'i' = 2, 2 is < arrays.length which is 3; arrays[c] == 'a', prints out 'false'
+	// then 'i' = 2 + 1, fourth iteration 'i' = 3, 3 is < arrays.length which is 3; 3 is not less than arrays length of 3, therefore the program ends.
+	}
+
+
+	//you can also loop up to a certain number
+	for(let i=0; i<50; i = i+1){
+	console.log(i);
+	}
+
+	//loop over a string
+	let name = 'jerry';
+
+	for(let i=0; i<name.length; i = i+1){
+	console.log(name[i]);
+	}
+
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bear array</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    let bears = ['papa bear', 'mama bear', 'baby bear', 'little bear', 'mini bear'];
+    let whichBear = prompt("Which bear do you want to see?");
+    let index = bears.indexOf(whichBear);
+
+    if (index == -1) {
+        bears.push(whichBear);
+    }    
+    
+    // if (bears.indexOf(whichBear) > -1) {
+    //     alert('I found the bear!')
+    // } else {
+    //     alert('sorry that bear isnt here');
+    // }
+
+</script>
+</body>
+</html>
